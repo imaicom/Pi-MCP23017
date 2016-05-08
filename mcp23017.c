@@ -1,3 +1,4 @@
+// cc -o mcp23017 mcp23017.c -lwiringPi
 #include <stdio.h>
 #include <wiringPi.h>
 #include <mcp23017.h>
