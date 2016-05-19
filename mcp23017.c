@@ -13,12 +13,14 @@ int main(void) {
 
 	for(i = 0; i < 8; i++) {
 		pinMode(100 + i , OUTPUT);
-		pinMode(108 + i , INPUT );
+		pinMode(108 + i , OUTPUT);
+//		pinMode(108 + i , INPUT );
 	}
 
 	while(1) {
 		for(i = 0; i < 8; i++) {
-			digitalWrite(100 + i , digitalRead(108 + i));
+//			digitalWrite(100 + i , digitalRead(108 + i));
+			digitalWrite(100 + i , 1);
 		}
 
 		delay(50); // 50ms
